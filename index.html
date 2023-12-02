@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./styles/imgs/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Ryan's Lazy Redesign</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">There are no other pages.</a>
+              <a class="nav-link" href="#">I did this at 5pm 12/2/23.</a>
+              <a class="nav-link" href="#">Did not have much inspiration</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h2>Bad Design For An App Which I Cannot/Am To Lazy To Show</h2>
+                <p>There is this app called "OfficeTrack" which I, and Levon, have to use for work. WE work as Comcast contractors going to fix networks.
+                    Essentially, this app gives us the work orders we have to fill out when the job is done (and sometimes in progress) such as taking pictures
+                    of the network install before and after the job, which is reasonable; HOWEVER--HOWWWWEVER! Whoever designed the app is either dumb, ignorant, or
+                    a sadist. First of all, the Project Cordinator (PC) seemingly cannot customize the sheet sent to us digitally to fill out, and there only appears to be
+                    like two or so sheets in the first place.<br><br>This means that, no matter how little or how much we do, we have to sometimes (most of the time) fill out 
+                    a sheet as if we did a whole install, which includes pictures of every device, the MAC address for some devices, pictures of all the access points, and more.
+                    Much, much more. So, below, a twenty-year-old college student who just learned how to make forms is going to give to you a better example of what the app
+                    should FUNCTION like as opposed to what a professionally contracted software engineer provided to comcast (for presumably a fair chunk of change).<br><br>
+                    Oh, and I'm going to do it on the most barebones website because I haven't had inspiration to do this for the last three weeks.
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <label>(What the Project Cordinator Sees)</label>
+                <form>
+                    <label>Job Details</label>
+                    <br>
+                    <input type="radio" name="job-type" id="complete-install" value="complete-install"> Complete Install
+                    <br>
+                    <input type="radio" name="job-type" id="crossover" value="crossover"> Crossover
+                    <br>
+                    <input type="radio" name="job-type" id="repair" value="repair"> Repair
+                    <p>I'm not implementing Crossover or Repair, but you get the idea of what I'm trying to do. If the PC clicked Crossover, it would give them a list of devices that could be replaced, and they would click those devices to be added to the new system. The OT would then require the MAC address for each device and a potential speedtest. There should also be a fail option for if the job failed (couldn't get connectivity, device dead, etc.). Repair would be somewhat blanketed. It would give a prompt to the technician to inquire as to the problem, a picture of the new device(s) (if any) and have them give the MAC addresses. I don't feel like coding all of that. But you get the general idea of what I was trying to do. It's a lot to do in five hours (especially since I don't know what questions to ask). This website is kind of (a nice way to say incredibly) bad. I apologize. I simply lacked any sort of motivation (I also couldn't find a bad UI that I cared about).</p>
+                </form>
+            </div>
+            <div class="col-md-5">
+                <label>(What the technician sees after the OfficeTrack is pushed through)</label>
+                <form>
+                    Technician First Name: <input type="text" id="fname">
+                    <br>
+                    Technician Last Name: <input type="text" id="lname">
+                    <br>
+                    Manager-On-Duty First Name: <input type="text" id="fname">
+                    <br>
+                    Manager-On-Duty Last Name: <input type="text" id="lname">
+                    <br>
+                    <label class="complete-actions">Picture of New Rack Location:</label> <input class="complete-actions" type="file">
+                    <br>
+                    <label class="complete-actions">Modem MAC Address: </label> <input class="complete-actions" type="text">
+                    <br>
+                    <label class="complete-actions">Firewall MAC Address(es): </label> <input class="complete-actions" type="text">
+                    <br>
+                    <label class="complete-actions">Reported Speed Test: </label> <input class="complete-actions" type="text">
+                </form>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/scripts.js"></script>
+</body>
+</html>
